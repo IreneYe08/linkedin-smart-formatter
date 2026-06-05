@@ -1,0 +1,15 @@
+As a PM at Cortex Workspace, I've spent months speaking with accountants and finance teams about how AI fits into their daily work.
+One pattern appears repeatedly.
+Accountants rarely struggle with finding an answer.
+They spend most of their time gathering the information required to answer the question.
+A typical workflow might involve:
+- Pulling numbers from an ERP
+- Searching through emails
+- Reviewing internal policies
+- Drafting client-facing summaries
+Many AI tools help with bookkeeping, tax research, and document extraction.
+**The remaining challenge is workflow fragmentation.**
+During our research for the "Best AI Tools for Accountants 2026" report, this theme surfaced again and again:
+Productivity gains come from reducing information retrieval and context-switching, not only from automating calculations.
+Curious what others are seeing:
+For accountants, finance teams, auditors, and consultants—where do you spend the most time today?
