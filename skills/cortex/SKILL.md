@@ -8,14 +8,16 @@ description: >-
 
 # LinkedIn Text Formatter (Cortex Workspace)
 
-Install: clone repo → run `./install.sh` — symlinks to `~/.cortex/skills/linkedin-text-formatter`.
+Install: clone [linkedin-text-formatter-cortex](https://github.com/IreneYe08/linkedin-text-formatter-cortex) into `~/.cortex/skills/linkedin-text-formatter`.
 
-Manual install:
+Legacy (monorepo symlink via `./install.sh`):
 
 ```bash
 ln -sfn /path/to/linkedin-smart-formatter/skills/cortex ~/.cortex/skills/linkedin-text-formatter
 echo /path/to/linkedin-smart-formatter > ~/.linkedin-formatter-home
 ```
+
+For the full Cortex edition (guidelines + scripts), use the dedicated repo instead of this thin adapter.
 
 ## Run
 

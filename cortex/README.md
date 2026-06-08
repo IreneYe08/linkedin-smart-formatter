@@ -2,25 +2,33 @@
 
 **Self-contained Agent Skill for Cortex players.** Draft in Cortex → paste-ready LinkedIn post. No browser tab.
 
-## Install
+> **This folder is a mirror** of the [dedicated Cortex repo](https://github.com/IreneYe08/linkedin-text-formatter-cortex). For Cortex users, clone that repo directly.
+
+## Install (recommended)
 
 ### Windows
 
 ```powershell
-git clone https://github.com/IreneYe08/linkedin-smart-formatter.git $env:USERPROFILE\linkedin-smart-formatter
-Copy-Item -Recurse -Force $env:USERPROFILE\linkedin-smart-formatter\cortex $env:USERPROFILE\.cortex\skills\linkedin-text-formatter
+git clone https://github.com/IreneYe08/linkedin-text-formatter-cortex.git $env:USERPROFILE\.cortex\skills\linkedin-text-formatter
 py -3 $env:USERPROFILE\.cortex\skills\linkedin-text-formatter\scripts\linkedin_post.py --self-test
 ```
 
 ### macOS / Linux
 
 ```bash
-git clone https://github.com/IreneYe08/linkedin-smart-formatter.git ~/linkedin-smart-formatter
-cp -r ~/linkedin-smart-formatter/cortex ~/.cortex/skills/linkedin-text-formatter
+git clone https://github.com/IreneYe08/linkedin-text-formatter-cortex.git ~/.cortex/skills/linkedin-text-formatter
 python ~/.cortex/skills/linkedin-text-formatter/scripts/linkedin_post.py --self-test
 ```
 
 Restart Cortex Agent (or open a new session) so the skill loads.
+
+## Install from this monorepo (alternative)
+
+If you already cloned [linkedin-smart-formatter](https://github.com/IreneYe08/linkedin-smart-formatter):
+
+```powershell
+Copy-Item -Recurse -Force $env:USERPROFILE\linkedin-smart-formatter\cortex $env:USERPROFILE\.cortex\skills\linkedin-text-formatter
+```
 
 ## What's included
 
@@ -42,11 +50,9 @@ The agent runs `scripts/linkedin_post.py` and returns copy-paste output.
 
 ## Update
 
-```powershell
-cd $env:USERPROFILE\linkedin-smart-formatter
-git pull
-Copy-Item -Recurse -Force cortex $env:USERPROFILE\.cortex\skills\linkedin-text-formatter
-```
+**Dedicated repo:** `cd ~/.cortex/skills/linkedin-text-formatter && git pull`
+
+**Monorepo copy:** pull main repo and re-copy `cortex/` folder.
 
 ## Full repo (other platforms)
 

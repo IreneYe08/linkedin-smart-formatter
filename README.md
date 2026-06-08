@@ -49,7 +49,7 @@ One repo, multiple platforms:
 |----------|--------------|----------------|
 | **Cursor** | `./install.sh` or `install.ps1` | `~/.cursor/skills/linkedin-text-formatter` |
 | **Claude Code** | same | `~/.claude/skills/linkedin-text-formatter` |
-| **Cortex Workspace** | **[`cortex/`](cortex/)** — self-contained bundle | `~/.cortex/skills/linkedin-text-formatter` |
+| **Cortex Workspace** | **[dedicated repo](https://github.com/IreneYe08/linkedin-text-formatter-cortex)** (recommended) or [`cortex/`](cortex/) in this repo | `~/.cortex/skills/linkedin-text-formatter` |
 | **Codex / CLI agents** | paste snippet | `skills/codex/AGENTS.snippet.md` → your `AGENTS.md` |
 
 ### macOS / Linux
@@ -73,13 +73,17 @@ Install writes `~/.linkedin-formatter-home` so agents resolve the CLI path autom
 
 ### Cortex Workspace (full edition)
 
-The [`cortex/`](cortex/) folder includes scripts + 8-block post guidelines + anti-AI writing rules — copy the whole folder:
+**Recommended:** use the dedicated Cortex repo — clone straight into your skills folder:
 
 ```powershell
-Copy-Item -Recurse -Force $env:USERPROFILE\linkedin-smart-formatter\cortex $env:USERPROFILE\.cortex\skills\linkedin-text-formatter
+git clone https://github.com/IreneYe08/linkedin-text-formatter-cortex.git $env:USERPROFILE\.cortex\skills\linkedin-text-formatter
 ```
 
-Details: [cortex/README.md](cortex/README.md)
+Includes scripts + 8-block post guidelines + anti-AI writing rules.
+
+Alternatively, copy [`cortex/`](cortex/) from this monorepo (kept in sync for convenience).
+
+Details: [cortex/README.md](cortex/README.md) · [linkedin-text-formatter-cortex](https://github.com/IreneYe08/linkedin-text-formatter-cortex)
 
 ## Agent workflow
 

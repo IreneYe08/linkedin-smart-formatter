@@ -15,18 +15,18 @@ Self-contained skill: scripts live in `scripts/` next to this file. **Always run
 ## Install (Cortex players)
 
 ```powershell
-git clone https://github.com/IreneYe08/linkedin-smart-formatter.git
-Copy-Item -Recurse -Force linkedin-smart-formatter\cortex $env:USERPROFILE\.cortex\skills\linkedin-text-formatter
+git clone https://github.com/IreneYe08/linkedin-text-formatter-cortex.git $env:USERPROFILE\.cortex\skills\linkedin-text-formatter
 ```
 
 macOS / Linux:
 
 ```bash
-git clone https://github.com/IreneYe08/linkedin-smart-formatter.git ~/linkedin-smart-formatter
-cp -r ~/linkedin-smart-formatter/cortex ~/.cortex/skills/linkedin-text-formatter
+git clone https://github.com/IreneYe08/linkedin-text-formatter-cortex.git ~/.cortex/skills/linkedin-text-formatter
 ```
 
 Verify: `py -3 ~/.cortex/skills/linkedin-text-formatter/scripts/linkedin_post.py --self-test`
+
+Dedicated repo: [linkedin-text-formatter-cortex](https://github.com/IreneYe08/linkedin-text-formatter-cortex)
 
 ## Agent workflow
 
