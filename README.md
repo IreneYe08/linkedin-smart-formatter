@@ -71,6 +71,16 @@ py -3 scripts\linkedin_post.py --self-test
 
 Install writes `~/.linkedin-formatter-home` so agents resolve the CLI path automatically.
 
+### Cortex Workspace (full edition)
+
+The [`cortex/`](cortex/) folder includes scripts + 8-block post guidelines + anti-AI writing rules — copy the whole folder:
+
+```powershell
+Copy-Item -Recurse -Force $env:USERPROFILE\linkedin-smart-formatter\cortex $env:USERPROFILE\.cortex\skills\linkedin-text-formatter
+```
+
+Details: [cortex/README.md](cortex/README.md)
+
 ## Agent workflow
 
 ```
