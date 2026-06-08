@@ -49,7 +49,7 @@ One repo, multiple platforms:
 |----------|--------------|----------------|
 | **Cursor** | `./install.sh` or `install.ps1` | `~/.cursor/skills/linkedin-text-formatter` |
 | **Claude Code** | same | `~/.claude/skills/linkedin-text-formatter` |
-| **Cortex Workspace** | same | `~/.cortex/skills/linkedin-text-formatter` |
+| **Cortex Workspace** | **[`cortex/`](cortex/)** — self-contained bundle | `~/.cortex/skills/linkedin-text-formatter` |
 | **Codex / CLI agents** | paste snippet | `skills/codex/AGENTS.snippet.md` → your `AGENTS.md` |
 
 ### macOS / Linux
